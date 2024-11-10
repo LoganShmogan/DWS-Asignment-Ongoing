@@ -1,0 +1,14 @@
+<aside>
+  <div class="sidebarTop">
+    <h1>Locations</h1>
+  </div>
+  <ul class="sidebarList">
+    {{#each suburbs}}
+    <a href="/filter/{{suburb}}" class="suburbLink">{{suburb}}</a>
+    {{#unless @last}} <!-- This makes it so that it doesn't display a <hr> on the last subrub item !-->
+    <hr>
+    {{/unless}}
+    {{/each}}
+  </ul>
+  <div class="sidebarBottom"></div>
+</aside>

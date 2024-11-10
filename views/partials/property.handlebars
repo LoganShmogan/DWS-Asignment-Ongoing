@@ -1,0 +1,9 @@
+  <div class="propertyCards">
+    {{#each properties}}
+    <div class="propertyCard">
+      <div class="cardTop">{{address}}</div> 
+      <img src="{{image_url}}" alt="Image of {{address}}" /> 
+      <div class="cardBottom">${{list_price}}</div> 
+    </div>
+    {{/each}}
+  </div>
